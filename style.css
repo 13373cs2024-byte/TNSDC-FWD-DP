@@ -1,0 +1,214 @@
+/* Reset */
+
+body, h1, h2, h3, p, ul {
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+body {
+
+  font-family: Arial, sans-serif;
+
+  display: flex;
+
+  background: pink; /* Soft gray background */
+
+  color: black;
+
+}
+
+/* Layout */
+
+.main-container {
+
+  display: flex;
+
+  width: 100%;
+
+}
+
+/* Sidebar */
+
+.sidebar {
+
+  width: 25%;
+
+  background: #3b4a5b; /* Dark blue-gray background */
+
+  color: white;
+
+  text-align: center;
+
+  padding: 30px 20px;
+
+  min-height: 100vh;
+
+  position: fixed;
+
+}
+
+.profile-img {
+
+  width: 120px;
+
+  height: 120px;
+
+  border-radius: 50%;
+
+  border: 3px solid #fff;
+
+  margin-bottom: 15px;
+
+}
+
+.sidebar h2 {
+
+  margin-bottom: 5px;
+
+}
+
+.sidebar p {
+
+  font-size: 14px;
+
+  margin-bottom: 20px;
+
+  color: #a1b0c3; /* Light gray text */
+
+}
+
+.sidebar ul {
+
+  list-style: none;
+
+}
+
+.sidebar ul li {
+
+  margin: 15px 0;
+
+}
+
+.sidebar ul li a {
+
+  text-decoration: none;
+
+  color: white;
+
+  font-weight: bold;
+
+  transition: color 0.3s;
+
+}
+
+.sidebar ul li a:hover {
+
+  color: #ff6347; /* Tomato red hover effect */
+
+}
+
+/* Content */
+
+.content {
+
+  margin-left: 25%;
+
+  padding: 30px;
+
+  width: 75%;
+
+}
+
+section {
+
+  margin-bottom: 50px;
+
+}
+
+h1 {
+
+  margin-bottom: 15px;
+
+  border-bottom: 2px solid #ff6347; /* Tomato red accent */
+
+  display: inline-block;
+
+  padding-bottom: 5px;
+
+}
+
+/* Skills */
+
+.skill-cards {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+}
+
+.card {
+
+  background: #e9f4f5; /* Light teal background */
+
+  padding: 15px 20px;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+
+  transition: transform 0.3s, background 0.3s;
+
+}
+
+.card:hover {
+
+  background: #ff6347; /* Tomato red on hover */
+
+  color: white;
+
+  transform: scale(1.05);
+
+}
+
+/* Projects */
+
+.project-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 15px;
+
+}
+
+.project-card {
+
+  background: #fff;
+
+  padding: 20px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+  transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.project-card:hover {
+
+  transform: translateY(-5px);
+
+  border-left: 5px solid #ff6347; /* Tomato red accent */
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+}
+
